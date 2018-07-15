@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andryha.storage.controllers.UpdateController">
+   <children>
+      <TextField fx:id="fxName" layoutX="94.0" layoutY="49.0" promptText="Название" />
+      <TextField fx:id="fxDescription" layoutX="94.0" layoutY="86.0" promptText="Описание" />
+      <TextField fx:id="fxPrice" layoutX="94.0" layoutY="126.0" promptText="Цена" />
+      <TextField fx:id="fxBalance" layoutX="94.0" layoutY="167.0" promptText="Баланс" />
+      <ComboBox fx:id="fxSubtype" layoutX="93.0" layoutY="213.0" prefWidth="150.0" promptText="ПОДКАТЕГОРИЯ" />
+      <Button layoutX="94.0" layoutY="272.0" mnemonicParsing="false" onAction="#update" text="ИЗМЕНИТЬ" />
+   </children>
+</Pane>

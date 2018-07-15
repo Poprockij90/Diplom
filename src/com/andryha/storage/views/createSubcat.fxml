@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="288.0" prefWidth="307.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andryha.storage.controllers.CreateSubcatController">
+   <children>
+      <TextField fx:id="fxSubcat" layoutX="46.0" layoutY="50.0" prefHeight="25.0" prefWidth="246.0" promptText="Введите подкатегорию" text="Введите подкатегорию" />
+      <ComboBox fx:id="fxCategory" layoutX="46.0" layoutY="97.0" prefWidth="150.0" promptText="КАТЕГОРИЯ" />
+      <Button layoutX="46.0" layoutY="159.0" mnemonicParsing="false" onAction="#createSubcat" text="СОЗДАТЬ" />
+   </children>
+</Pane>

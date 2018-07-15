@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="458.0" prefHeight="365.0" prefWidth="458.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andryha.storage.controllers.CreateController">
+   <children>
+      <TextField fx:id="fxName" layoutX="40.0" layoutY="63.0" prefHeight="25.0" prefWidth="268.0" promptText="Название" />
+      <TextField fx:id="fxDescription" layoutX="40.0" layoutY="96.0" prefHeight="25.0" prefWidth="268.0" promptText="Описание" />
+      <TextField fx:id="fxPrice" layoutX="40.0" layoutY="129.0" prefHeight="25.0" prefWidth="268.0" promptText="Цена" />
+      <TextField fx:id="fxBalance" layoutX="40.0" layoutY="162.0" prefHeight="25.0" prefWidth="268.0" promptText="Кол-во" />
+      <ComboBox fx:id="fxSubtype" layoutX="97.0" layoutY="201.0" prefWidth="150.0" promptText="подкатегория" />
+      <Button layoutX="97.0" layoutY="250.0" mnemonicParsing="false" onAction="#create" prefHeight="33.0" prefWidth="150.0" text="СОЗДАТЬ" textFill="#26ed26">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="557.0" prefWidth="757.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.andryha.storage.controllers.GlobalController">
+   <children>
+      <TableView fx:id="listOfAllGoods" layoutX="36.0" layoutY="172.0" prefHeight="152.0" prefWidth="622.0">
+        <columns>
+            <TableColumn fx:id="fxId" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="fxName" prefWidth="128.0" text="наименование" />
+          <TableColumn fx:id="fxPrice" prefWidth="68.0" text="цена" />
+          <TableColumn fx:id="fxDescription" prefWidth="101.0" text="описание" />
+          <TableColumn fx:id="fxSubtype" prefWidth="122.0" text="подкатегория" />
+        </columns>
+      </TableView>
+      <TextField fx:id="searchByID" layoutX="14.0" layoutY="14.0" onKeyReleased="#searchByID" prefHeight="25.0" prefWidth="421.0" promptText="поиск по ID" />
+      <Button fx:id="addOneGood" layoutX="16.0" layoutY="324.0" mnemonicParsing="false" onAction="#addGood" text="добавить" />
+      <Button fx:id="deleteOneGood" layoutX="131.0" layoutY="324.0" mnemonicParsing="false" onAction="#deleteGood" text="Удалить" />
+      <Button fx:id="upgrateOneGood" layoutX="250.0" layoutY="324.0" mnemonicParsing="false" onAction="#upgrateGood" text="Редактировать" />
+      <Button fx:id="addOneSubtype" layoutX="409.0" layoutY="324.0" mnemonicParsing="false" onAction="#addSubtype" text="Добавить подкатегорию" />
+      <TextField fx:id="searchByName" layoutX="14.0" layoutY="39.0" onKeyReleased="#searchByName" prefHeight="25.0" prefWidth="421.0" promptText="поиск по имени" />
+      <TextField layoutX="16.0" layoutY="64.0" prefHeight="25.0" prefWidth="421.0" />
+      <TextField layoutX="16.0" layoutY="89.0" prefHeight="25.0" prefWidth="421.0" />
+      <Text layoutX="448.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск по ID" />
+      <Text layoutX="448.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Поиск по названию" />
+   </children>
+</Pane>
